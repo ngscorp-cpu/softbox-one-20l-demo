@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0C2340" />
+  <title>Softbox ONE 20L | Instrucciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <img src="assets/brand-lockup.svg" class="brand" alt="CSafe y Zoetis" />
+      <div class="lang" aria-label="Selector de idioma">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">GUÍA DE PRODUCTO</p>
+          <h1>Softbox ONE <span>20L</span></h1>
+          <p class="lead" data-i18n="subtitle">Instrucciones de acondicionamiento y ensamble</p>
+          <div class="notice">
+            <strong data-i18n="noticeTitle">Importante</strong>
+            <span data-i18n="noticeText">Seleccione únicamente la configuración asignada para su territorio.</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-kicker" data-i18n="quickAccess">Acceso rápido</div>
+          <div class="hero-card-title" data-i18n="chooseRoute">Elija su configuración</div>
+          <a href="#rutas" class="primary-btn" data-i18n="viewRoutes">Ver rutas</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="rutas" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="configuration">CONFIGURACIÓN</p>
+        <h2 data-i18n="selectRoute">Seleccione la ruta indicada</h2>
+      </div>
+
+      <div class="route-grid">
+        <button class="route-card cold" data-route="cold">
+          <div class="route-icon">❄</div>
+          <div>
+            <span class="route-tag" data-i18n="coldRoute">RUTA FRÍA</span>
+            <h3 data-i18n="coldShort">4 Pharma-Cool — Tinta Roja</h3>
+            <p data-i18n="coldDesc">Configuración para territorios con bajas temperaturas externas.</p>
+            <span class="text-link" data-i18n="viewInstructions">Ver instrucciones →</span>
+          </div>
+        </button>
+
+        <button class="route-card hot" data-route="hot">
+          <div class="route-icon">☀</div>
+          <div>
+            <span class="route-tag" data-i18n="hotRoute">RUTA CALIENTE</span>
+            <h3 data-i18n="hotShort">2 Pharma-Cool rojos + 2 azules</h3>
+            <p data-i18n="hotDesc">Configuración para territorios con exposición a picos de calor.</p>
+            <span class="text-link" data-i18n="viewInstructions">Ver instrucciones →</span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section id="detail" class="detail hidden">
+      <div class="shell">
+        <button class="back-link" id="backBtn" data-i18n="back">← Volver a configuraciones</button>
+
+        <div class="detail-header">
+          <div>
+            <p class="eyebrow" id="routeEyebrow">RUTA FRÍA</p>
+            <h2 id="routeTitle">Acondicionamiento y ensamble</h2>
+          </div>
+          <div class="route-pill" id="routePill">Ruta Fría</div>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel">
+            <h3 data-i18n="conditioning">Acondicionamiento</h3>
+            <div id="conditioningContent"></div>
+          </article>
+
+          <article class="panel important-panel" id="criticalPanel">
+            <h3 data-i18n="critical">Punto crítico</h3>
+            <div id="criticalContent"></div>
+          </article>
+        </div>
+
+        <article class="video-panel">
+          <div class="video-copy">
+            <p class="eyebrow" data-i18n="videoEyebrow">VIDEO INSTRUCTIVO</p>
+            <h3 data-i18n="videoTitle">Vea el ensamble paso a paso</h3>
+            <p data-i18n="videoText">El video oficial se incorporará aquí antes de la implementación.</p>
+          </div>
+          <div class="video-placeholder">
+            <div class="play">▶</div>
+            <div data-i18n="videoSoon">Video próximamente</div>
+          </div>
+        </article>
+
+        <article class="steps-panel">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="manualEyebrow">GUÍA VISUAL</p>
+            <h3 data-i18n="stepsTitle">Ensamble paso a paso</h3>
+          </div>
+          <ol class="steps" id="stepsList"></ol>
+
+          <details class="manual-preview">
+            <summary data-i18n="openManual">Ver página original del instructivo</summary>
+            <img id="manualImage" alt="Página del manual de ensamble" />
+          </details>
+        </article>
+
+        <section class="support">
+          <div>
+            <p class="eyebrow" data-i18n="supportEyebrow">SOPORTE</p>
+            <h3 data-i18n="supportTitle">¿Necesita ayuda?</h3>
+            <p data-i18n="supportText">Contacte a Servicio al Cliente de CSafe.</p>
+          </div>
+          <div class="support-actions">
+            <button class="secondary-btn" disabled data-i18n="phonePending">Teléfono por confirmar</button>
+            <button class="secondary-btn" id="downloadBtn" data-i18n="downloadGuide">Abrir instructivo</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>Softbox ONE 20L</span>
+      <span data-i18n="prototype">Prototipo interno — CSafe LATAM</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

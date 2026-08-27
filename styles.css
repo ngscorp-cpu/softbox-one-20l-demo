@@ -1,0 +1,134 @@
+
+:root{
+  --navy:#0C2340;
+  --blue:#006BA6;
+  --blue2:#0077B6;
+  --light:#F4F7FA;
+  --mid:#DDE6EE;
+  --text:#203040;
+  --muted:#607286;
+  --orange:#F26A21;
+  --danger:#B42318;
+  --shadow:0 18px 45px rgba(12,35,64,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--text);
+  background:#fff;
+}
+.shell{width:min(1120px, calc(100% - 40px)); margin:0 auto}
+.topbar{
+  position:sticky; top:0; z-index:20;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #E7EDF2;
+}
+.nav{height:74px; display:flex; align-items:center; justify-content:space-between}
+.brand{width:245px; max-width:58vw}
+.lang{display:flex; background:var(--light); border-radius:999px; padding:4px; gap:3px}
+.lang-btn{
+  border:0; background:transparent; color:var(--muted);
+  font-weight:700; padding:8px 10px; border-radius:999px; cursor:pointer
+}
+.lang-btn.active{background:#fff;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.hero{
+  background:linear-gradient(135deg,#F6FAFD 0%,#FFFFFF 58%,#EEF5F9 100%);
+  padding:74px 0 62px;
+}
+.hero-grid{display:grid; grid-template-columns:1.4fr .7fr; gap:48px; align-items:center}
+.eyebrow{font-size:12px; letter-spacing:.14em; font-weight:800; color:var(--blue); margin:0 0 12px}
+h1{font-size:clamp(42px,7vw,76px); line-height:.96; margin:0; color:var(--navy); letter-spacing:-.04em}
+h1 span{color:var(--blue)}
+.lead{font-size:22px; margin:18px 0 26px; color:#456176}
+.notice{
+  display:flex; gap:10px; align-items:flex-start;
+  max-width:720px; padding:14px 16px; border-left:4px solid var(--orange);
+  background:#FFF8F3; border-radius:0 10px 10px 0
+}
+.notice strong{color:var(--navy)}
+.hero-card{
+  background:var(--navy); color:#fff; padding:30px;
+  border-radius:20px; box-shadow:var(--shadow)
+}
+.hero-card-kicker{font-size:12px; letter-spacing:.12em; font-weight:800; opacity:.72}
+.hero-card-title{font-size:26px; font-weight:700; margin:12px 0 24px}
+.primary-btn,.secondary-btn{
+  display:inline-flex; align-items:center; justify-content:center; text-decoration:none;
+  min-height:46px; padding:0 18px; border-radius:8px; border:0; font-weight:700; cursor:pointer
+}
+.primary-btn{background:#fff;color:var(--navy)}
+.secondary-btn{background:#fff;color:var(--navy);border:1px solid var(--mid)}
+.secondary-btn:disabled{opacity:.55;cursor:not-allowed}
+.section{padding:72px 0}
+.section-heading{margin-bottom:24px}
+.section-heading h2,.detail-header h2,.steps-panel h3,.support h3,.video-copy h3{margin:0;color:var(--navy)}
+.section-heading h2{font-size:34px}
+.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.route-card{
+  text-align:left; display:grid; grid-template-columns:62px 1fr; gap:18px;
+  background:#fff; border:1px solid #E1E8EE; padding:26px;
+  border-radius:18px; cursor:pointer; transition:.2s ease;
+}
+.route-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.route-icon{
+  width:56px;height:56px;border-radius:14px;display:grid;place-items:center;
+  font-size:28px;background:var(--light)
+}
+.route-card.hot .route-icon{background:#FFF5EE}
+.route-tag{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--blue)}
+.route-card.hot .route-tag{color:#B84B16}
+.route-card h3{font-size:22px;color:var(--navy);margin:8px 0}
+.route-card p{color:var(--muted);line-height:1.55;margin:0 0 16px}
+.text-link{font-weight:800;color:var(--blue)}
+.hidden{display:none}
+.detail{background:var(--light);padding:44px 0 80px}
+.back-link{border:0;background:transparent;color:var(--blue);font-weight:700;cursor:pointer;padding:0;margin-bottom:30px}
+.detail-header{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}
+.detail-header h2{font-size:34px}
+.route-pill{background:var(--navy);color:#fff;border-radius:999px;padding:10px 14px;font-weight:700}
+.content-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+.panel,.video-panel,.steps-panel,.support{
+  background:#fff;border:1px solid #E1E8EE;border-radius:18px;box-shadow:0 8px 24px rgba(12,35,64,.05)
+}
+.panel{padding:26px}
+.panel h3{margin:0 0 18px;color:var(--navy)}
+.panel ul{margin:0;padding-left:20px}
+.panel li{margin:0 0 12px;line-height:1.55}
+.important-panel{border-top:4px solid var(--orange)}
+.critical-box{background:#FFF8F3;padding:16px;border-radius:12px;line-height:1.55}
+.video-panel{margin-top:20px;padding:26px;display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:center}
+.video-placeholder{
+  min-height:240px;border-radius:14px;background:linear-gradient(135deg,var(--navy),#163B63);
+  color:#fff;display:grid;place-items:center;text-align:center;font-weight:700
+}
+.play{font-size:46px;margin-bottom:-70px;opacity:.92}
+.steps-panel{margin-top:20px;padding:26px}
+.steps{list-style:none;padding:0;margin:24px 0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{background:var(--light);border-radius:14px;padding:16px;min-height:170px}
+.step-num{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:14px}
+.step p{margin:0;line-height:1.45;font-size:14px}
+.manual-preview{margin-top:18px;border-top:1px solid #E3E9EE;padding-top:18px}
+.manual-preview summary{cursor:pointer;font-weight:700;color:var(--blue)}
+.manual-preview img{width:100%;margin-top:16px;border-radius:12px;border:1px solid #E3E9EE}
+.support{margin-top:20px;padding:26px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.support-actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{background:var(--navy);color:#D8E3ED;padding:24px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:13px}
+@media(max-width:800px){
+  .shell{width:min(100% - 28px,1120px)}
+  .nav{height:66px}.brand{width:200px}
+  .hero{padding:50px 0 44px}.hero-grid,.route-grid,.content-grid,.video-panel{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .section{padding:50px 0}
+  .route-card{grid-template-columns:52px 1fr;padding:20px}
+  .route-icon{width:48px;height:48px}
+  .detail-header{align-items:flex-start;flex-direction:column}
+  .steps{grid-template-columns:1fr}
+  .step{min-height:auto}
+  .support{align-items:flex-start;flex-direction:column}
+  .support-actions{width:100%}.support-actions .secondary-btn{width:100%}
+  .footer-inner{flex-direction:column}
+}
