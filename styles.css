@@ -132,3 +132,36 @@ footer{background:var(--navy);color:#D8E3ED;padding:24px 0}
   .support-actions{width:100%}.support-actions .secondary-btn{width:100%}
   .footer-inner{flex-direction:column}
 }
+
+/* CSafe official-style header supplied by user */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:#fff;
+  border-bottom:1px solid #E7EDF2;
+  box-shadow:0 2px 10px rgba(12,35,64,.04);
+}
+.official-header-wrap{
+  width:100%;
+  background:#fff;
+}
+.official-header{
+  width:100%;
+  display:block;
+  height:auto;
+}
+.language-row{
+  min-height:44px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+@media(max-width:800px){
+  .official-header{
+    min-height:62px;
+    object-fit:cover;
+    object-position:center;
+  }
+  .language-row{min-height:40px}
+}
