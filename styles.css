@@ -194,3 +194,68 @@ footer{background:var(--navy);color:#D8E3ED;padding:24px 0}
     border-bottom:1px solid #E7EDF2;
   }
 }
+
+/* V3.1 HARD MOBILE HEADER OVERRIDE */
+@media screen and (max-width: 800px) {
+  .desktop-header,
+  .official-header-wrap,
+  .official-header,
+  .language-row {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+
+  .topbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #E7EDF2 !important;
+    box-shadow: 0 2px 10px rgba(12,35,64,.04) !important;
+  }
+
+  .mobile-header.shell {
+    display: flex !important;
+    width: min(100% - 24px, 1120px) !important;
+    min-height: 74px !important;
+    margin: 0 auto !important;
+    padding: 8px 0 !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+  }
+
+  .mobile-logo {
+    display: block !important;
+    width: 145px !important;
+    max-width: 46vw !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    flex: 0 1 auto !important;
+  }
+
+  .mobile-header .lang {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    background: #F4F7FA !important;
+    border-radius: 999px !important;
+    padding: 4px !important;
+    gap: 3px !important;
+  }
+
+  .mobile-header .lang-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 38px !important;
+    padding: 8px 10px !important;
+  }
+}
