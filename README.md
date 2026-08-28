@@ -29,3 +29,8 @@ Este paquete contiene un prototipo estático para demostrar la experiencia que t
 ## V3
 - Header móvil optimizado: logo CSafe visible y slogan oculto en pantallas pequeñas.
 - Selector ES / EN / PT integrado en la misma fila del logo en móvil.
+
+
+## V4
+- Encabezado unificado en desktop y móvil: logo CSafe + selector ES/EN/PT.
+- Eliminado el slogan y las variantes duplicadas del header.
