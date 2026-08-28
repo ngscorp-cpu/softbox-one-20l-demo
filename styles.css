@@ -165,3 +165,32 @@ footer{background:var(--navy);color:#D8E3ED;padding:24px 0}
   }
   .language-row{min-height:40px}
 }
+
+/* V3: mobile-specific CSafe header */
+.mobile-header{
+  display:none;
+}
+@media(max-width:800px){
+  .desktop-header{
+    display:none;
+  }
+  .mobile-header{
+    display:flex;
+    min-height:72px;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+  }
+  .mobile-logo{
+    width:150px;
+    max-width:46vw;
+    height:auto;
+    display:block;
+  }
+  .mobile-header .lang{
+    flex-shrink:0;
+  }
+  .topbar{
+    border-bottom:1px solid #E7EDF2;
+  }
+}

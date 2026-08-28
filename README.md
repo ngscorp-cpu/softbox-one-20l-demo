@@ -24,3 +24,8 @@ Este paquete contiene un prototipo estático para demostrar la experiencia que t
 - Confirmar el teléfono de Servicio al Cliente.
 - Revisar/aprobar traducciones EN/PT con Marketing/Quality.
 - Generar un QR definitivo nuevo con la URL oficial.
+
+
+## V3
+- Header móvil optimizado: logo CSafe visible y slogan oculto en pantallas pequeñas.
+- Selector ES / EN / PT integrado en la misma fila del logo en móvil.
