@@ -1,36 +1,14 @@
-# Demo Softbox ONE 20L — CSafe LATAM
+# Softbox ONE 20L — V5
 
-Este paquete contiene un prototipo estático para demostrar la experiencia que tendría un cliente al escanear el QR.
+Página estática para consulta de instrucciones de acondicionamiento y armado.
 
-## Archivos
-- `index.html` — página principal
-- `styles.css` — estilos responsive
-- `app.js` — selector ES / EN / PT y contenido de rutas
-- `assets/` — imágenes de referencia de los manuales
-- PDFs originales de Ruta Fría y Ruta Caliente
+## Publicación en GitHub Pages
 
-## Publicarlo temporalmente en GitHub Pages
-1. Crear un repositorio nuevo en GitHub, por ejemplo `softbox-one-demo`.
-2. Subir todo el contenido de esta carpeta a la raíz del repositorio.
-3. En GitHub: Settings → Pages.
-4. En Build and deployment, seleccionar `Deploy from a branch`.
-5. Branch: `main` y folder `/ (root)`.
-6. Guardar. GitHub mostrará la URL pública del demo.
-7. Usar esa URL únicamente para el QR de prueba interno.
+1. Abra el repositorio `ngscorp-cpu/softbox-one-20l-demo`.
+2. En la rama `main`, use **Add file → Upload files**.
+3. Suba **el contenido de esta carpeta**, no el ZIP. Mantenga la estructura `assets/`.
+4. Confirme con **Commit changes**. La página conserva la misma URL y el QR existente seguirá apuntando a ella.
 
-## Antes de producción
-- Sustituir la URL temporal por una URL oficial bajo dominio CSafe.
-- Insertar el video instructivo final.
-- Confirmar el teléfono de Servicio al Cliente.
-- Revisar/aprobar traducciones EN/PT con Marketing/Quality.
-- Generar un QR definitivo nuevo con la URL oficial.
+El video optimizado se encuentra en `assets/softbox-one-20l-armado.mp4` (aprox. 20.6 MB; 480p). Se usa para facilitar la subida por navegador y la reproducción móvil. El video original no se incluye.
 
-
-## V3
-- Header móvil optimizado: logo CSafe visible y slogan oculto en pantallas pequeñas.
-- Selector ES / EN / PT integrado en la misma fila del logo en móvil.
-
-
-## V4
-- Encabezado unificado en desktop y móvil: logo CSafe + selector ES/EN/PT.
-- Eliminado el slogan y las variantes duplicadas del header.
+La V5 no afirma disponer de un teléfono de soporte sin confirmar. El contenido debe validarse con Operaciones/Marketing antes de su uso oficial.

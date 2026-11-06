@@ -12,13 +12,13 @@ const translations = {
     viewInstructions:"Ver instrucciones →", back:"← Volver a configuraciones",
     conditioning:"Acondicionamiento", critical:"Punto crítico",
     videoEyebrow:"VIDEO INSTRUCTIVO", videoTitle:"Vea el ensamble paso a paso",
-    videoText:"El video oficial se incorporará aquí antes de la implementación.",
+    videoText:"Consulte el video de armado del Softbox ONE 20L.",
     videoSoon:"Video próximamente", manualEyebrow:"GUÍA VISUAL",
     stepsTitle:"Ensamble paso a paso", openManual:"Ver página original del instructivo",
     supportEyebrow:"SOPORTE", supportTitle:"¿Necesita ayuda?",
     supportText:"Contacte a Servicio al Cliente de CSafe.",
     phonePending:"Teléfono por confirmar", downloadGuide:"Abrir instructivo",
-    prototype:"Prototipo interno — CSafe LATAM"
+    prototype:"CSafe LATAM"
   },
   en: {
     eyebrow:"PRODUCT GUIDE", subtitle:"Conditioning and assembly instructions",
@@ -32,13 +32,13 @@ const translations = {
     viewInstructions:"View instructions →", back:"← Back to configurations",
     conditioning:"Conditioning", critical:"Critical point",
     videoEyebrow:"INSTRUCTIONAL VIDEO", videoTitle:"Watch the assembly step by step",
-    videoText:"The official video will be added here before implementation.",
+    videoText:"Watch the Softbox ONE 20L assembly video (in Spanish).",
     videoSoon:"Video coming soon", manualEyebrow:"VISUAL GUIDE",
     stepsTitle:"Step-by-step assembly", openManual:"View original instruction page",
     supportEyebrow:"SUPPORT", supportTitle:"Need help?",
     supportText:"Contact CSafe Customer Service.",
     phonePending:"Phone pending confirmation", downloadGuide:"Open guide",
-    prototype:"Internal prototype — CSafe LATAM"
+    prototype:"CSafe LATAM"
   },
   pt: {
     eyebrow:"GUIA DO PRODUTO", subtitle:"Instruções de condicionamento e montagem",
@@ -52,13 +52,13 @@ const translations = {
     viewInstructions:"Ver instruções →", back:"← Voltar às configurações",
     conditioning:"Condicionamento", critical:"Ponto crítico",
     videoEyebrow:"VÍDEO INSTRUTIVO", videoTitle:"Veja a montagem passo a passo",
-    videoText:"O vídeo oficial será incluído aqui antes da implementação.",
+    videoText:"Assista ao vídeo de montagem do Softbox ONE 20L (em espanhol).",
     videoSoon:"Vídeo em breve", manualEyebrow:"GUIA VISUAL",
     stepsTitle:"Montagem passo a passo", openManual:"Ver página original do manual",
     supportEyebrow:"SUPORTE", supportTitle:"Precisa de ajuda?",
     supportText:"Entre em contato com o Serviço ao Cliente da CSafe.",
     phonePending:"Telefone a confirmar", downloadGuide:"Abrir manual",
-    prototype:"Protótipo interno — CSafe LATAM"
+    prototype:"CSafe LATAM"
   }
 };
 

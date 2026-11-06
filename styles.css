@@ -314,3 +314,7 @@ footer{background:var(--navy);color:#D8E3ED;padding:24px 0}
     max-width:44vw !important;
   }
 }
+
+/* V5 — video integrado */
+.video-player-wrap{width:100%;background:#071a2f;border-radius:14px;overflow:hidden;line-height:0}
+.video-player-wrap video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#071a2f}

@@ -98,9 +98,11 @@
             <h3 data-i18n="videoTitle">Vea el ensamble paso a paso</h3>
             <p data-i18n="videoText">El video oficial se incorporará aquí antes de la implementación.</p>
           </div>
-          <div class="video-placeholder">
-            <div class="play">▶</div>
-            <div data-i18n="videoSoon">Video próximamente</div>
+          <div class="video-player-wrap">
+            <video controls playsinline preload="metadata" aria-label="Video de instrucciones de armado Softbox ONE 20L">
+              <source src="assets/softbox-one-20l-armado.mp4" type="video/mp4" />
+              Su navegador no admite la reproducción de video.
+            </video>
           </div>
         </article>
 
@@ -124,7 +126,6 @@
             <p data-i18n="supportText">Contacte a Servicio al Cliente de CSafe.</p>
           </div>
           <div class="support-actions">
-            <button class="secondary-btn" disabled data-i18n="phonePending">Teléfono por confirmar</button>
             <button class="secondary-btn" id="downloadBtn" data-i18n="downloadGuide">Abrir instructivo</button>
           </div>
         </section>
@@ -135,7 +136,7 @@
   <footer>
     <div class="shell footer-inner">
       <span>Softbox ONE 20L</span>
-      <span data-i18n="prototype">Prototipo interno — CSafe LATAM</span>
+      <span data-i18n="prototype">CSafe LATAM</span>
     </div>
   </footer>
 
